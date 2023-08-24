@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="MoodCapture_Ver1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MoodCapture_Ver1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Margin="2,2,-2,-2" Padding="0,50,0,0">
+        <Image x:ConnectionId='1' x:Name="imgFace" HorizontalAlignment="Left" Height="200" Margin="53,141,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button x:ConnectionId='2' x:Name="btnCapture" Content="Click a Photo" HorizontalAlignment="Left" Margin="83,49,0,0" VerticalAlignment="Top" Width="116"                         />
+        <Button x:ConnectionId='3' x:Name="btnCheckEmotion" Content="Check the Emotion" HorizontalAlignment="Left" Margin="413,49,0,0" VerticalAlignment="Top" Width="158"                               IsEnabled="False"/>
+        <TextBox x:ConnectionId='4' x:Name="txtEmotionInfo" HorizontalAlignment="Left" Height="200" Margin="330,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" />
+        <TextBox x:ConnectionId='5' x:Name="txtFinalEmotion" HorizontalAlignment="Left" Height="52" Margin="53,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="477" FontWeight="ExtraBold"/>
+        <Button x:ConnectionId='6' x:Name="btnSelectFromFile" Content="Select From File" HorizontalAlignment="Left" Margin="253,49,0,0" VerticalAlignment="Top"                                />
+        <RichTextBlock HorizontalAlignment="Left" Height="30" Margin="330,10,100,100" VerticalAlignment="Top" Width="120">
+            <Paragraph>
+                <Run Text="Mood Capture" FontWeight="Bold"/>
+            </Paragraph>
+        </RichTextBlock>
+
+    </Grid>
+
+</Page>
+
